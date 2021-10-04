@@ -1,0 +1,4 @@
+pyuic5 -o main_window_ui.py ui/main_window.ui
+
+
+pyrcc5 -o images_rc.py ui/images.qrc
