@@ -117,7 +117,7 @@ class Window(QMainWindow, Ui_oMainWind):
             self.startStopBind()
 
     def closeAll(self):
-        os.kill(self.oProcess.pid, signal.CTRL_C_EVENT)
+        self.oProcess.send_signal(signal.CTRL_C_EVENT)
         exit()
 
     def updateComList(self):
